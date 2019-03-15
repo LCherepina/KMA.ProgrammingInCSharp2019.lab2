@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KMA.ProgrammingInCSharp2019.lab2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" MaxWidth="400" MaxHeight="500"  MinHeight="350" MinWidth="400"  Height="500" Width="400">
     <Grid>
-        
+        <ContentControl Name="_contentControl" IsEnabled="{Binding Path=IsControlEnabled, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"></ContentControl>
+
     </Grid>
 </Window>
