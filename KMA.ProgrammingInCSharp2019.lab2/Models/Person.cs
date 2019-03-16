@@ -26,7 +26,7 @@ namespace KMA.ProgrammingInCSharp2019.lab2.Models
             get { return _name; }
             private set
             {
-                Regex regex = new Regex(@"^[A-zА-яЄєЇїІі][A-zА-яЄєЇїІі|\.|\s]+$");
+                Regex regex = new Regex(@"^[A-zА-яЄєЇїІі][A-zА-яЄєЇїІі|\.|\s|-]+$");
                 Match match = regex.Match(value);
                 if (!match.Success)
                 {
@@ -41,7 +41,7 @@ namespace KMA.ProgrammingInCSharp2019.lab2.Models
             get { return _surname; }
             private set
             {
-                Regex regex = new Regex(@"^[A-zА-яЄєЇїІі][A-zА-яЄєЇїІі]+$");
+                Regex regex = new Regex(@"^[A-zА-яЄєЇїІі][A-zА-яЄєЇїІі|-]+$");
                 Match match = regex.Match(value);
                 if (!match.Success)
                 {
