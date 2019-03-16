@@ -59,6 +59,7 @@
     <Compile Include="Managers\LoaderManager.cs" />
     <Compile Include="Managers\NavigationManager.cs" />
     <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="Managers\StationManager.cs" />
     <Compile Include="Tools\RelayCommand.cs" />
     <Page Include="Views\InfoView.xaml">
       <SubType>Designer</SubType>

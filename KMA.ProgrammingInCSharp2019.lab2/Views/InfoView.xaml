@@ -7,14 +7,15 @@
              MinHeight="350" MinWidth="400" FontSize="15">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="55"></RowDefinition>
-            <RowDefinition Height="55"></RowDefinition>
-            <RowDefinition Height="55"></RowDefinition>
-            <RowDefinition Height="55"></RowDefinition>
-            <RowDefinition Height="55"></RowDefinition>
-            <RowDefinition Height="55"></RowDefinition>
-            <RowDefinition Height="55"></RowDefinition>
-            <RowDefinition Height="55"></RowDefinition>
+            <RowDefinition Height="45"></RowDefinition>
+            <RowDefinition Height="45"></RowDefinition>
+            <RowDefinition Height="45"></RowDefinition>
+            <RowDefinition Height="45"></RowDefinition>
+            <RowDefinition Height="45"></RowDefinition>
+            <RowDefinition Height="45"></RowDefinition>
+            <RowDefinition Height="45"></RowDefinition>
+            <RowDefinition Height="45"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="100"></ColumnDefinition>
@@ -24,19 +25,20 @@
         <Label Name="FirstName" Grid.Row="0" Grid.Column="0"  VerticalAlignment="Center"  Content="First name: " ></Label>
         <TextBlock Name="TextFirstName" Grid.Row="0" Grid.Column="1" Margin="10" Text="{Binding FirstName, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"></TextBlock>
         <Label Name="LastName" Grid.Row="1" Grid.Column="0"  VerticalAlignment="Center"  Content="Last name: " ></Label>
-        <TextBlock Name="TextLastName" Grid.Row="1" Grid.Column="1" Margin="20" Text="{Binding LastName, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"></TextBlock>
+        <TextBlock Name="TextLastName" Grid.Row="1" Grid.Column="1" Margin="10" Text="{Binding LastName, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"></TextBlock>
         <Label Name="Email" Grid.Row="2" Grid.Column="0"  VerticalAlignment="Center"  Content="Email: " ></Label>
-        <TextBlock Name="TextEmail" Grid.Row="2" Grid.Column="1"  Margin="20" Text="{Binding Email, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"></TextBlock>
-        <Label Name="BirthDate" Grid.Row="3" VerticalAlignment="Center"  Content="Birthday date: " ></Label>
-        <TextBlock Name="TextBirthDate" Grid.Row="3" Grid.Column="1"  Margin="20" Text="{Binding Email, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"></TextBlock>
-        <Label Name="WSign" Grid.Row="4" VerticalAlignment="Center"  Content="West Sign: " ></Label>
-        <TextBlock Name="TextWSign" Grid.Row="4" Grid.Column="1"  Margin="20" Text="{Binding Email, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"></TextBlock>
-        <Label Name="ESign" Grid.Row="5" VerticalAlignment="Center"  Content="East Sign: " ></Label>
-        <TextBlock Name="TextESign" Grid.Row="5" Grid.Column="1"  Margin="20" Text="{Binding Email, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"></TextBlock>
-        <Label Name="IsAdult" Grid.Row="6" VerticalAlignment="Center"  Content="Adult: " ></Label>
-        <TextBlock Name="TextIsAdult" Grid.Row="6" Grid.Column="1"  Margin="20" Text="{Binding Email, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"></TextBlock>
-        <Label Name="IsBirthday" Grid.Row="7" VerticalAlignment="Center"  Content="Birthday: " ></Label>
-        <TextBlock Name="TextIsBirthday" Grid.Row="7" Grid.Column="1"  Margin="20" Text="{Binding Email, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"></TextBlock>
+        <TextBlock Name="TextEmail" Grid.Row="2" Grid.Column="1"  Margin="10" Text="{Binding Email, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"></TextBlock>
+        <Label Name="BirthDate" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center"  Content="Birthday date: " ></Label>
+        <TextBlock Name="TextBirthDate" Grid.Row="3" Grid.Column="1"  Margin="10" Text="{Binding BirthDate, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"></TextBlock>
+        <Label Name="WSign" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center"  Content="West Sign: " ></Label>
+        <TextBlock Name="TextWSign" Grid.Row="4" Grid.Column="1"  Margin="10" Text="{Binding WSign, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"></TextBlock>
+        <Label Name="ESign" Grid.Row="5" Grid.Column="0" VerticalAlignment="Center"  Content="East Sign: " ></Label>
+        <TextBlock Name="TextESign" Grid.Row="5" Grid.Column="1"  Margin="10" Text="{Binding ESign, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"></TextBlock>
+        <Label Name="IsAdult" Grid.Row="6" Grid.Column="0" VerticalAlignment="Center"  Content="Adult: " ></Label>
+        <TextBlock Name="TextIsAdult" Grid.Row="6" Grid.Column="1"  Margin="10" Text="{Binding IsAdult, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"></TextBlock>
+        <Label Name="IsBirthday" Grid.Row="7" Grid.Column="0" VerticalAlignment="Center"  Content="Birthday: " ></Label>
+        <TextBlock Name="TextIsBirthday" Grid.Row="7" Grid.Column="1"  Margin="10" Text="{Binding IsBirthday, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"></TextBlock>
+        <Button Name="BackButton" Grid.Row="8" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.ColumnSpan="2" Width="60" Margin="0,0,0,20" Command="{Binding BackCommand}">Back</Button>
 
     </Grid>
 </UserControl>
